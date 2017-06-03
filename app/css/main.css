@@ -29,6 +29,7 @@ body {
 .container {
 	width: 960px;
 	margin: 0 auto;
+	position: relative;
 }
 
 .nav-blocks {
@@ -114,6 +115,93 @@ body {
 }
 .banner img {
 	display: block;
+}
+.content {
+	margin-top: 37px;
+	margin-bottom: 70px;
+}
+.content-main {
+	width: 100%;
+	outline: 1px solid black;
+	padding:0 316px 0 10px;
+	box-sizing: border-box;
+}
+.block-right {
+	width: 286px;
+	outline: 1px solid green;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.slider {
+	padding: 16px;
+	border: 1px solid #cacaca;
+	background: #fff;
+	text-align: center;
+	position: relative;
+}
+.slider-image {
+	display: block;
+}
+.title-block {
+	background: linear-gradient(to top, #030303 50%, #191919 50%);
+	font: 22px Georgia, serif;
+	padding: 7px 13px;
+	display: inline-block;
+	position: absolute;
+	left: -10px;
+	top: -34px;
+	color: #fff;
+}
+.triangle {
+	width: 0;
+	height: 0;
+	border-top: 12px solid #000;
+	border-left: 10px solid transparent;
+	border-right: 0 solid transparent;
+	position: absolute;
+	left: 0;
+	top: 40px;
+}
+
+.slider-controls {
+	list-style: none;
+	padding: 9px;
+	margin: 20px 0 0 0;
+	border: 1px solid #cccdcd;
+	background: #fff;
+}
+.slider-control {
+	float: left;
+	border: 1px solid #cccdcd;
+	margin-right: 10px;
+	position: relative;
+}
+.slider-control-link {
+	background: url("../img/slide1.jpg") center no-repeat;
+	background-size: cover;
+	text-decoration: none;
+	display: block;
+	width: 42px;
+	height: 42px;
+	margin: 4px;
+	opacity: 0.6;
+}
+.slider-link-active {
+	opacity: 1;
+}
+.triangle-img-slide {
+	background: url(../img/triangle-slider.png) center no-repeat;
+	width: 20px;
+	height: 10px;
+	display: block;
+	position: absolute;
+	top:-19px;
+	left: 15px;
+	display: none;
+}
+.last-control {
+	margin: 0;
 }
 
 
