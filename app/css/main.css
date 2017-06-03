@@ -1,3 +1,5 @@
+@import url("fonts.css");
+
 html {
 	width: 100%;
 	height: 100%;
@@ -42,10 +44,11 @@ body {
 	text-decoration: none;
 }
 .nav-block-link {
-	font: bold 14.6px Georgia;
+	font: bold 11px Georgia;
+	text-transform: uppercase;
 	color: #c0c0c0;
 	display: inline-block;
-	padding: 10px;
+	padding: 8px 10px;
 	text-decoration: none;
 	transition: all .2s ease;
 }
@@ -68,14 +71,53 @@ body {
 .category-bl-a {
 	text-decoration: none;
 	display: inline-block;
-	padding:15px 20px;
-	font: bold 14.6px Georgia;
-	color: #c0c0c0;
+	padding:10px 20px;
+	font: bold 11px Georgia;
+	text-transform: uppercase;
+	color: #717171;
 	border-right: 1px solid #cacaca;
 }
 .category-bl-a:hover {
 	background: #f0f0f0;
 }
+.header-bottom {
+
+}
+.header-bottom-left,
+.header-bottom-right {
+	width: 50%;
+	float: left;
+}
+
+.logo {
+	text-decoration: none;
+	display: inline-block;
+	margin-top: 36px;
+}
+.logo-main {
+	font:47px "ChaparralProBold", serif;
+	line-height: 40px;
+	display: block;
+	color: #191919;
+}
+.logo-text {
+	font:bold 14px Georgia, serif;
+	letter-spacing: 0.7px;
+	display: block;
+	color: #555555;
+	margin-left: 5px;
+}
+
+.banner {
+	float: right;
+	margin-top: 38px;
+}
+.banner img {
+	display: block;
+}
+
+
+
 
 .clearfix:before,
 .clearfix:after {
