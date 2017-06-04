@@ -122,13 +122,13 @@ body {
 }
 .content-main {
 	width: 100%;
-	outline: 1px solid black;
+	outline: 0px solid black;
 	padding:0 316px 0 10px;
 	box-sizing: border-box;
 }
 .block-right {
 	width: 286px;
-	outline: 1px solid green;
+	outline: 0px solid green;
 	position: absolute;
 	right: 0;
 	top: 0;
@@ -152,6 +152,7 @@ body {
 	left: -10px;
 	top: -34px;
 	color: #fff;
+	z-index: 99;
 }
 .triangle {
 	width: 0;
@@ -178,17 +179,33 @@ body {
 	position: relative;
 }
 .slider-control-link {
-	background: url("../img/slide1.jpg") center no-repeat;
-	background-size: cover;
+	background-image: url("../img/sprite-slide.jpg");
 	text-decoration: none;
 	display: block;
 	width: 42px;
 	height: 42px;
 	margin: 4px;
 	opacity: 0.6;
+	transition: all 0.5s ease;
 }
-.slider-link-active {
+.slide1 {background-position: 0 center ;}
+.slide2 {background-position:-42px center;}
+.slide3 {background-position: -84px center;}
+.slide4 {background-position: -126px center;}
+.slide5 {background-position: -168px center;}
+.slide6 {background-position: -210px center;}
+.slide7 {background-position: -252px center;}
+.slide8 {background-position: -294px center;}
+.slide9 {background-position: -336px center;}
+.slide10 {background-position: -378px center;}
+.control-active {
+	background: #e0e0e0;
+}
+.control-active .slider-control-link {
 	opacity: 1;
+}
+.control-active .triangle-img-slide {
+	visibility: visible;
 }
 .triangle-img-slide {
 	background: url(../img/triangle-slider.png) center no-repeat;
@@ -198,7 +215,7 @@ body {
 	position: absolute;
 	top:-19px;
 	left: 15px;
-	display: none;
+	visibility: hidden;
 }
 .last-control {
 	margin: 0;
