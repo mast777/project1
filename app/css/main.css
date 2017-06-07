@@ -347,6 +347,172 @@ body {
 	margin-top: 10px;
 }
 
+/*Block left*/
+.container-aside {
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	outline: 0px solid #000;
+}
+.form-search {
+	text-align: right;
+}
+.search-text {
+	font: 12px Verdana,serif;
+	width: 164px;
+	height: 36px;
+	padding:0 10px;
+	border-top: 1px solid #cacaca;
+	border-bottom: 1px solid #cacaca;
+	border-left: 1px solid #cacaca;
+}
+.search-text::-webkit-input-placeholder {font-size: 10px; color:#cacaca;}
+.search-text::-moz-placeholder          {font-size: 10px; color:#cacaca;}/* Firefox 19+ */
+.search-text:-moz-placeholder           {font-size: 10px; color:#cacaca;}/* Firefox 18- */
+.search-text:-ms-input-placeholder      {font-size: 10px; color:#cacaca;}
+.search-bottom {
+	width: 98px;
+	height: 38px;
+	background: linear-gradient(to top, #030303 50%, #191919 50%);
+	font:bold 11px Georgia, serif;
+	color: #fff;
+	border: none;
+	float: right;
+}
+.social-blocks{
+	margin-top: 30px;
+	font:14px Georgia;
+	color: #5e5e5e;
+}
+.social-block {
+	width: 50%;
+	float: left;
+}
+.social-block p {
+	width: 50px;
+	margin: 0 0 0 50px;
+}
+.social-block span {
+	line-height: 20px;
+	font-size: 24px;
+	font-weight: bold;
+	color: #000;
+}
+.social-rss {
+	background: url(../img/icon-rss.png) left no-repeat;
+}
+.social-twitter {
+	background: url(../img/icon-twitter.png) left no-repeat;
+}
+/*Vkladki*/
+.vkladki-css {
+	border: 1px solid #cacaca;
+	margin-top: 27px;
+	background: #fff;
+}
+.controls-botom {
+	background: linear-gradient(to top, #030303 50%, #191919 50%);
+	font:bold 11px Georgia, serif;
+	color: #fff;
+	padding: 7px 13px;
+	cursor: pointer;
+	display: block;
+	float: left;
+	width: 24.18%;
+	transition:all .3s ease;
+	text-align: center;
+	text-transform:uppercase;
+}
+.controls-botom:hover {
+	text-decoration: underline;
+}
+.controls-chekbox:checked + .controls-botom {
+	background: #fff;
+	color: #000;
+}
+.controls-chekbox {
+	display: none;
+}
+#controls-botom1:checked ~ .vkladki-blocks>.vkl-b1 {
+	opacity: 1;
+}
+#controls-botom2:checked ~ .vkladki-blocks>.vkl-b2 {
+	opacity: 1;
+}
+#controls-botom3:checked ~ .vkladki-blocks>.vkl-b3 {
+	opacity: 1;
+}
+.vkladki-blocks {
+	clear: both;
+	min-height: 205px;
+	padding: 15px;
+}
+.vkladki-block {
+	width: 255px;
+	position: absolute;
+	opacity: 0;
+	display: block;
+	transition: all .3s ease;
+}
+
+.article3-cont {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.block-article-cont3 {
+	outline: 0px solid green;
+	float: left;
+	width: 275px;
+	min-height: 100px;
+	margin:0 15px;
+}
+
+.part3-title a {
+	width: 255px;
+	text-align: left;
+	text-decoration: none;
+	font:bold 16px Georgia, serif;
+	color: #2f2f2f;
+	margin: 15px 0 10px 0;
+	display: block;
+	float: left;
+}
+.part3-title a:hover {
+	text-decoration: underline;
+}
+
+.part3-img {
+	border: 1px solid #cccdcd;
+	width: 50px;
+	height: 50px;
+	float: left;
+}
+.part3-img img {
+	margin: 4px;
+}
+.part3-text {
+	font: 12px Arial, serif;
+	color: #676767;
+	margin-left: 12px;
+	float: left;
+	width: 180px;
+	height: 58px;
+	overflow: hidden;
+}
+.part3-text:after {
+	content: "[...]";
+}
+.line-cont3 {
+	float: left;
+	display: block;
+	width: 250px;
+	border: 1px solid #cacaca;
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+/*Vkladki END*/
+/*Block Left END-------------*/
 .clearfix:before,
 .clearfix:after {
 	content: " ";
