@@ -19,3 +19,5 @@
  	}
  	changeImg();
  });
+
+$("a#single_image").fancybox();
