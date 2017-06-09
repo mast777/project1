@@ -21,7 +21,7 @@ body {
 }
 .footer {
 	background: #181818;
-	height: 495px;
+	min-height: 495px;
 	margin-top: -495px;
 	position: relative;
 }
@@ -30,6 +30,7 @@ body {
 	width: 960px;
 	margin: 0 auto;
 	position: relative;
+	transition: width .3s ease;
 }
 
 .nav-blocks {
@@ -142,6 +143,7 @@ body {
 }
 .slider-image {
 	display: block;
+	width: 600px;
 }
 .title-block {
 	background: linear-gradient(to top, #030303 50%, #191919 50%);
@@ -162,7 +164,7 @@ body {
 	border-right: 0 solid transparent;
 	position: absolute;
 	left: 0;
-	top: 40px;
+	top: 39px;
 }
 
 .slider-controls {
@@ -236,7 +238,6 @@ body {
 	outline: 0px solid green;
 	float: left;
 	width: 275px;
-	min-height: 100px;
 	margin: 15px;
 }
 
@@ -288,7 +289,7 @@ body {
 .block-article2 {
 	list-style: none;
 	border: 1px solid #cccdcd;
-	padding: 10px;
+	padding: 10px 10px 20px 10px ;
 	margin: 0;
 }
 .article2-cont {
@@ -300,7 +301,6 @@ body {
 	outline: 0px solid green;
 	float: left;
 	width: 275px;
-	min-height: 100px;
 	margin:0 15px;
 }
 
@@ -418,7 +418,7 @@ body {
 	cursor: pointer;
 	display: block;
 	float: left;
-	width: 24.18%;
+	width: 24.17%;
 	transition:all .3s ease;
 	text-align: center;
 	text-transform:uppercase;
@@ -624,6 +624,9 @@ body {
 /*Block Right END-------------*/
 
 /* FOOTER START*/
+.footer-top {
+	outline: 1px solid red;
+}
 .fotop-blocks {
 	width: 33.32%;
 	outline: 0px solid #fff;
@@ -639,8 +642,7 @@ body {
 }
 
 .fo-block1 li {
-	border-bottom: 1px solid #2c2c2c;
-	box-shadow: 0 1px 1px #434343;
+	border-bottom: 2px solid #2c2c2c;
 }
 .fo-block1 li h2 {
 	font:bold 12px/27px Georgia, serif;
@@ -714,8 +716,7 @@ body {
 }
 
 .fo-block2 li {
-	border-bottom: 1px solid #2c2c2c;
-	box-shadow: 0 1px 1px #434343;
+	border-bottom: 2px solid #2c2c2c;
 }
 .fo-block2 li h2 {
 	background: url(../img/icon-footer-blog.png) no-repeat;
@@ -759,7 +760,7 @@ body {
 	margin: 8px 0;
 }
 .fo-form-intext, .fo-form textarea {
-	width: 100%;
+	width: 95%;
 	background: #383838;
 	border-radius: 6px;
 	border: none;

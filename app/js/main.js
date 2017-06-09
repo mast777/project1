@@ -20,4 +20,16 @@
  	changeImg();
  });
 
-$("a#single_image").fancybox();
+// $("#single_image").fancybox();
+
+// $('.you-link').fancybox({
+//         openEffect  : 'none',
+//         closeEffect : 'none',
+//         helpers : {
+//             media : {}
+//         }
+//     });
+    $("#you-link").fancybox({
+    		'transitionIn'	: 'none',
+    		'transitionOut'	: 'none'
+    	});
