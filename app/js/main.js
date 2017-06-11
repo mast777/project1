@@ -8,6 +8,7 @@
  	function changeImg(){
  		$(".slider-image").animate({"opacity": 0} ,function(){
  		$(this).attr("src","img/slide"+imgNum+".jpg");
+    $(this).parent().attr("href","img/big-slide/big"+imgNum+".jpg");
  		$(".slider-control").each(function(){
  			if(this.classList.contains('control-active')) {
  				$(this).removeClass("control-active");

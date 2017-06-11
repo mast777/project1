@@ -625,7 +625,7 @@ body {
 
 /* FOOTER START*/
 .footer-top {
-	outline: 1px solid red;
+	outline: 0px solid red;
 }
 .fotop-blocks {
 	width: 33.32%;
